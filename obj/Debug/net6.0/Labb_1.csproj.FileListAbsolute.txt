@@ -1,0 +1,15 @@
+/home/rundstycke/Documents/Net22/Labb/Labb_1/bin/Debug/net6.0/Labb_1
+/home/rundstycke/Documents/Net22/Labb/Labb_1/bin/Debug/net6.0/Labb_1.deps.json
+/home/rundstycke/Documents/Net22/Labb/Labb_1/bin/Debug/net6.0/Labb_1.runtimeconfig.json
+/home/rundstycke/Documents/Net22/Labb/Labb_1/bin/Debug/net6.0/Labb_1.dll
+/home/rundstycke/Documents/Net22/Labb/Labb_1/bin/Debug/net6.0/ref/Labb_1.dll
+/home/rundstycke/Documents/Net22/Labb/Labb_1/bin/Debug/net6.0/Labb_1.pdb
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.csproj.AssemblyReference.cache
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.AssemblyInfoInputs.cache
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.AssemblyInfo.cs
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.csproj.CoreCompileInputs.cache
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.dll
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/ref/Labb_1.dll
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.pdb
+/home/rundstycke/Documents/Net22/Labb/Labb_1/obj/Debug/net6.0/Labb_1.genruntimeconfig.cache

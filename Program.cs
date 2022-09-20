@@ -1,32 +1,63 @@
-﻿// Användaren får mata in en sträng
-Console.WriteLine("Insert a string:" );
-// Deklarera variabler
+﻿ConsoleColor[] colors ={
+        ConsoleColor.Red,
+        ConsoleColor.Magenta,
+        ConsoleColor.Cyan,
+        ConsoleColor.Green,
+        ConsoleColor.DarkGreen,
+        ConsoleColor.Blue,
+        ConsoleColor.DarkBlue,
+        ConsoleColor.DarkCyan,
+        ConsoleColor.DarkGreen,
+        ConsoleColor.DarkYellow,
+        ConsoleColor.Yellow,
+        ConsoleColor.DarkGray,
+        ConsoleColor.DarkMagenta,
+        ConsoleColor.DarkRed,
+        ConsoleColor.White
+    };
+
+Console.WriteLine("Write a string:" );
+string originalString = "";
+int startIndex = 0;
+int endIndex = 0;
 long total = 0;
+//int Length = (endIndex - startIndex) + 1;
+int totalNumbersFound = 0;
 string? userInput = Console.ReadLine();
-// Kolla om strängen inte är null
+
+for (int k = 0; k < originalString.Length; k++)
+    {
+        if (k >= startIndex && k <= endIndex)
+        {
+            Console.ForegroundColor = colors[totalNumbersFound % colors.Length];
+        }
+        else
+        {
+            Console.ResetColor();
+        }
+        Console.Write(originalString[k]);
+
 if (userInput != null)
 {
-    // loopar igenom strängen
     for (int i = 0; i < userInput.Length; i++)
     {
-        // Kollar om tecknet är en siffra
         if (char.IsDigit(userInput[i]))
-        {   // Loopar igenom strängen efter i:s position
+        {
             for (int j = i + 1; j < userInput.Length; j++)
             {
-                // Kollar om tecknet är en siffra
                 if (char.IsDigit(userInput[j]))
                 {
-                    // Om siffra i är samma som siffra j
                     if (userInput[i] == userInput[j])
-                    {   // bryter ut siffrorna från i till j och lägger i en variabel
+                    {
+                        totalNumbersFound++;
+                        startIndex = i;
+                        endIndex = j;
+                        originalString = userInput;
                         string number = userInput.Substring(i, j - i + 1);
-                        // konverterar strängen till long och adderar till totalen
                         total += long.Parse(number);
                         break;
                     }
                 }
-                // Bryter loopen om tecknet inte är en siffra
                 else
                 {
                     break;
@@ -34,12 +65,14 @@ if (userInput != null)
             }
         }
     }
-    // Skriver ut totalem
     Console.WriteLine($"Total: = {total}");
+    // Console.WriteLine();
+    // Console.ResetColor();
+    // Console.WriteLine();
+    //Console.WriteLine(String.Format("Total = {0}", total));
 }
-// Strängen får inte vara null
 else
 {
-    // Om strängen är null skrivs incorrect value ut
     Console.WriteLine("Incorrect value");
 }
+    }
